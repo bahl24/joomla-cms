@@ -30,6 +30,7 @@ $user      = Factory::getUser();
 		<?php foreach ($menuTypes as &$type) : ?>
 			<li>
 				<div class="menu-links-block">
+					
 					<button class="btn btn-sm btn-secondary jform-rightbtn mb-2" type="button" onclick="
 						var value = Boolean(!document.querySelector('.<?php echo $type->menutype; ?>').checked);
 						for(var count=0; count < document.querySelectorAll('.<?php echo $type->menutype; ?>').length; count++){

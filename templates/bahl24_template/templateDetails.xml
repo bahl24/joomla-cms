@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.5" type="template">
+    <!-- Basic information about template -->
+    <name>bahl24_template</name>
+    <creationDate>2019</creationDate>
+    <author>nitish bahl</author>
+    <authorEmail>nitishbahl24@gmail.com</authorEmail>
+    <authorUrl>https://github.com/bahl24</authorUrl>
+    <version>1.0</version>
+    <description>
+    Custom Template designed by Nitish Bahl(bahl24). In this template, three params have been declared.
+    </description>
+
+    <!-- Files to be included -->
+    <files>
+        <filename>index.php</filename>
+        <filename>templateDetails.xml</filename>
+        <filename>template_preview.png</filename>
+        <filename>template_thumbnail.png</filename>
+        <folder>images</folder>
+        <folder>css</folder>
+        <folder>js</folder>
+        <folder>Field</folder>
+    </files>
+
+    <!-- Positions: left,right,top,bottom -->
+    <positions>
+        <position>left</position>
+        <position>right</position>
+        <position>top</position>
+        <position>bottom</position>
+    </positions>
+
+    <config>
+        <!-- Params -->
+		<fields name="params">
+			<fieldset name="advanced">
+
+                <field
+                    name="templateColour"
+                    type="list"
+                    label="Component Color"
+                    description="Pick Component color"
+                    default="black">
+                    <option value="blue">Blue</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="black">Black</option>
+                </field>
+
+                <field
+                    name="templateStyle"
+                    type="radio"
+                    default="normal"
+                    label="Component Style"
+                    description="Pick Component style">
+                    <option value="normal">Normal</option>
+                    <option value="italic">Italic</option>
+                </field>
+
+                <field
+                    name="CustomElem"
+                    type="nitishbahl"
+                    label="Enter text"
+                    description="To be stored in a custom form field"
+                    >
+                </field>
+
+            </fieldset>
+        </fields>
+        <!-- Params End -->
+    </config>
+
+</extension>

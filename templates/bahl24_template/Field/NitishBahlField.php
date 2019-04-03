@@ -4,18 +4,13 @@ namespace Joomla\CMS\Form\Field;
 
 defined('JPATH_PLATFORM') or die;
 
-class NitishBahlField extends FormField
+use Joomla\CMS\Form\FormField;
+
+class NitishField extends FormField
 {
-	protected $type = 'NitishBahl';
+	protected $type = 'Nitish';
 	
-	protected $layout = 'joomla.form.field.nitishbahl';
+	protected $layout = 'joomla.form.field.nitish';
 
-
-	public function getInput() {
-		return '<select id="'.$this->id.'" name="'.$this->name.'">'.
-		       '<option value="1" >New York</option>'.
-		       '<option value="2" >Chicago</option>'.
-		       '<option value="3" >San Francisco</option>'.
-		       '</select>';
-	}
+	//Text field by default
 }

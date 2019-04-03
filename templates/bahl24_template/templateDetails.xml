@@ -60,7 +60,7 @@
 
                 <field
                     name="CustomElem"
-                    type="nitishbahl"
+                    type="nitish"
                     label="Enter text"
                     description="To be stored in a custom form field"
                     >
